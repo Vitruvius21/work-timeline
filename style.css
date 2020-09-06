@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #79838c;
+  background-color: #292d3e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline {
+  position: relative;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+.timeline:after {
+  content: '';
+  width: 6px;
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0rem;
+  left: 80px;
+  z-index: 1;
+  background: #c5c5c5;
+}
+
+.year section {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.year ul,
+h2 {
+  margin-left: 140px;
+}
+
+h2 {
+  padding-bottom: 10px;
+}
+
+.week-container {
+  position: absolute;
+}
+
+.sticky-week {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: sticky;
+  display: inline-block;
+  background: black;
+  border-radius: 3px;
+  width: 80px;
+  text-align: center;
+  margin-left: 42px;
+  top: 20px;
+  color: #888;
+  padding: 4px 0 4px 0;
+  z-index: 2;
+}
+
+.year ul {
+  max-width: 45rem;
+  list-style-type: none;
+}
+
+.year li {
+  padding: 5px;
+}
+
+.type-li-container {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: nowrap;
+}
+
+.type-new::before,
+.type-fixed::before,
+.type-modified::before,
+.type-breaking::before {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 90%);
+  display: flex;
+  position: relative;
+  top: -1.8px;
+  border-radius: 3px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  padding: 4px;
+}
+
+.type-fixed::before {
+  content: 'fixed';
+  background-color: #4242f4;
+}
+
+.type-new::before {
+  content: 'new';
+  background-color: #05a87a;
+}
+
+.type-modified::before {
+  content: 'modified';
+  background-color: #b1980a;
+}
+
+.type-breaking::before {
+  content: 'breaking';
+  background-color: #ba0935;
+}
