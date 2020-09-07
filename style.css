@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: BPGExcelsior;
-  src: url(../fonts/BPGExcelsior.ttf);
+  src: url(./fonts/BPGExcelsior.ttf);
 }
 
 @font-face {
   font-family: KolkhetiMtav;
-  src: url(../fonts/HkolkhetiMtav.ttf);
+  src: url(./fonts/HkolkhetiMtav.ttf);
 }
 
 body {
@@ -45,17 +45,17 @@ body {
   background: #c5c5c5;
 }
 
-.year section {
+.week section {
   position: relative;
   margin-bottom: 30px;
 }
 
-.year ul,
+.week ul,
 h2 {
   margin-left: 100px;
 }
 
-.year ul {
+.week ul {
   max-width: 40rem;
   list-style-type: none;
 }
@@ -88,7 +88,7 @@ h2 {
   flex-wrap: nowrap;
 }
 
-.year li {
+.week li {
   font-family: BPGExcelsior;
   padding: 5px;
 }
