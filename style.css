@@ -41,7 +41,7 @@ mark {
   margin-top: 5rem;
 }
 
-.timeline:after {
+.timeline::after {
   content: '';
   width: 6px;
   position: absolute;
@@ -50,6 +50,7 @@ mark {
   left: 50px;
   z-index: 1;
   background: #c5c5c5;
+  border-radius: 10px 10px 0 0;
 }
 
 /** ========== Weeks ========== */
