@@ -42,7 +42,7 @@ mark {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   width: 6px;
   position: absolute;
   top: 0.5rem;
@@ -107,7 +107,8 @@ h2 {
 .type-new::before,
 .type-fixed::before,
 .type-modified::before,
-.type-breaking::before {
+.type-breaking::before,
+.type-issue::before {
   font-family: Calibri;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -124,21 +125,26 @@ h2 {
 }
 
 .type-fixed::before {
-  content: 'fixed';
+  content: "fixed";
   background-color: #4242f4;
 }
 
 .type-new::before {
-  content: 'new';
+  content: "new";
   background-color: #05a87a;
 }
 
 .type-modified::before {
-  content: 'modified';
+  content: "modified";
   background-color: #9e8f2e;
 }
 
 .type-breaking::before {
-  content: 'breaking';
+  content: "breaking";
   background-color: #ba0935;
+}
+
+.type-issue::before {
+  content: "issue";
+  background-color: #8209ba;
 }
