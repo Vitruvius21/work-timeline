@@ -108,7 +108,8 @@ h2 {
 .type-fixed::before,
 .type-modified::before,
 .type-breaking::before,
-.type-issue::before {
+.type-issue::before,
+.type-analysis::before {
   font-family: Calibri;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -146,5 +147,10 @@ h2 {
 
 .type-issue::before {
   content: "issue";
-  background-color: #8209ba;
+  background-color: #8237a5;
+}
+
+.type-analysis::before {
+  content: "analysis";
+  background-color: #665f5f;
 }
